@@ -3,7 +3,7 @@ import { NavLink } from 'react-router';
  import userImg from '../assets/user.png'
 const Navbar = () => {
     return (
-        <div className='flex justify-between items-center'>
+        <div className='flex justify-between items-center py-5'>
             <div className=''></div>
             <div className='nav flex gap-5'>
                 <NavLink to='/'>Home</NavLink>

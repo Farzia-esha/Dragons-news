@@ -1,7 +1,7 @@
-import { createBrowserRouter } from "react-router";
 import HomeLayout from "../Layouts/HomeLayout";
 import Home from "../Pages/Home";
 import CategoryNews from "../Pages/CategoryNews";
+import { createBrowserRouter } from "react-router";
 
 const router = createBrowserRouter(
     [
@@ -15,7 +15,8 @@ const router = createBrowserRouter(
                 },
                 {
                     path: '/category/:id',
-                    element: <CategoryNews></CategoryNews>
+                    element: <CategoryNews></CategoryNews>,
+                    loader: () => fetch('/news.json'),
                 }
             ]
         },
